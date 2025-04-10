@@ -6,10 +6,7 @@ const loaderWrapper = document.querySelector(".loader-wrapper")
 
 
 officerProfile.addEventListener("click", () => {
-    const data = showLoader()
-
-    console.log(data)
-    window.location.href = "profile.html"
+    showLoader("profile.html")
 })
 
 logo.addEventListener("click", () => {
@@ -21,10 +18,11 @@ signOutBtn.addEventListener("click", () => {
     window.location.href = "login.html"
 })
 
-function showLoader() {
+function showLoader(redirect) {
     loaderWrapper.classList.remove("hidden")
-    setInterval(() => {
+    setTimeout(() => {
         loaderWrapper.classList.add("hidden")
-        return true
+        window.location.href = redirect
     }, 2000)
+
 }

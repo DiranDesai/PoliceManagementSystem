@@ -112,7 +112,7 @@ ul{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: cover !important;
     margin-right: 10px;
     cursor: pointer;
 }
@@ -394,9 +394,7 @@ button:hover {
     margin: 40px auto;
     background: #fff;
     padding: 30px;
-    border-radius: 12px;
     /* box-shadow: 0 8px 20px rgba(0,0,0,0.1); */
-    font-family: 'Segoe UI', sans-serif;
   }
   
   .profile-header {
@@ -410,7 +408,7 @@ button:hover {
     width: 200px;
     height: 200px;
     border-radius: 20px;
-    object-fit: cover;
+    object-fit: contain;
   }
 
   .profile-header .ranks span{
@@ -803,6 +801,17 @@ button:hover {
   .profile-header{
     flex-direction: column;
     align-items: center;
+  }
+
+  .card-page {
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 1px 6px 0 #20212447;
+    border: none !important;
+    margin: 0 !important;
+  }
+  .heading-1{
+    margin-bottom: 0;
   }
 }
 

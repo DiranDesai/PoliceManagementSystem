@@ -83,6 +83,12 @@ ul{
 .space-x-2{
     grid-gap: 40px;
 }
+.span-2{
+  grid-column: span 2;
+}
+.span-3{
+  grid-column: span 3;
+}
 
 
 
@@ -112,9 +118,9 @@ ul{
 }
 .navbar input{
     padding: 10px;
-    width: 100%;
-    border-radius: 20px;
     border: 1px solid #ccc;
+    border-radius: 20px !important;
+    width: 400px !important;
 }
 .signout-btn{
     padding: 10px;
@@ -214,6 +220,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 2.5rem;
   }
 
 .stat-1{
@@ -718,4 +725,21 @@ button:hover {
   border-radius: 5px;
   cursor: pointer;
   display: inline-block;
+}
+
+
+
+@media (max-width: 768px) {
+  .sidebar{
+    display: none;
+  }
+  main{
+    margin-left: 0;
+  }
+  .stats{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .notify-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

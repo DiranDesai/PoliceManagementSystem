@@ -10,8 +10,7 @@ officerProfile.addEventListener("click", () => {
 })
 
 logo.addEventListener("click", () => {
-    showLoader()
-    window.location.href = "index.html"
+    showLoader("index.html")
 })
 
 signOutBtn.addEventListener("click", () => {
@@ -26,3 +25,58 @@ function showLoader(redirect) {
     }, 2000)
 
 }
+
+
+  // Chart 1: Cases by Status
+  const ctxStatus = document.getElementById('statusChart').getContext('2d');
+  const statusChart = new Chart(ctxStatus, {
+    type: 'doughnut',
+    data: {
+      labels: ['Open', 'Closed', 'Pending', 'Under Investigation'],
+      datasets: [{
+        label: 'Cases by Status',
+        data: [12, 8, 5, 3],
+        backgroundColor: ['#3498db', '#2ecc71', '#f1c40f', '#e67e22'],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'bottom'
+        }
+      }
+    }
+  });
+
+//   // Chart 2: Top Crimes This Month
+//   const ctxCrime = document.getElementById('crimeChart').getContext('2d');
+//   const crimeChart = new Chart(ctxCrime, {
+//     type: 'bar',
+//     data: {
+//       labels: ['Theft', 'Assault', 'Burglary', 'Fraud', 'Vandalism'],
+//       datasets: [{
+//         label: 'Cases',
+//         data: [10, 7, 6, 4, 2],
+//         backgroundColor: '#9b59b6',
+//         borderRadius: 6
+//       }]
+//     },
+//     options: {
+//       responsive: true,
+//       scales: {
+//         y: {
+//           beginAtZero: true,
+//           ticks: {
+//             stepSize: 1
+//           }
+//         }
+//       },
+//       plugins: {
+//         legend: {
+//           display: false
+//         }
+//       }
+//     }
+//   });

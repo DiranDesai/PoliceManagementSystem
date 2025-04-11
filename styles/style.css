@@ -813,6 +813,10 @@ button:hover {
   .heading-1{
     margin-bottom: 0;
   }
+
+  .officer-info{
+    text-align: center;
+  }
 }
 
 

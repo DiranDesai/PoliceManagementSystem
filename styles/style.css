@@ -407,8 +407,8 @@ button:hover {
   .profile-header img {
     width: 200px;
     height: 200px;
-    border-radius: 20px;
-    object-fit: contain;
+    border-radius: 50%;
+    object-fit: cover;
   }
 
   .profile-header .ranks span{

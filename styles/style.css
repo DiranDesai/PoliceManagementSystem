@@ -733,7 +733,7 @@ button:hover {
   .sidebar{
     transform: translateX(-700px);
     transition: transform 0.3s ease-in-out;
-    z-index: 1000;
+    z-index: 2000;
   }
   .sidebar .menu-icon-close{
     position: absolute;
@@ -752,7 +752,7 @@ button:hover {
     margin-left: 0;
   }
   .main-content{
-    padding: 50px 10px;
+    padding: 110px 10px;
   }
   .stats{
     grid-template-columns: repeat(1, 1fr);
@@ -766,6 +766,11 @@ button:hover {
     left: 0;
     width: 100%;
     z-index: 1000;
+    padding: 20px 10px;
+  }
+
+  .nav-profile{
+    align-items: normal
   }
 
   .navbar input{

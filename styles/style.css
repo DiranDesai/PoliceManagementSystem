@@ -727,6 +727,20 @@ button:hover {
   display: inline-block;
 }
 
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+}
+
 
 
 @media (max-width: 768px) {
@@ -819,4 +833,14 @@ button:hover {
     font-size: 40px;
     font-weight: 400;
   }
+}
+
+@media (min-width: 768px){
+  .navbar .menu-icon{
+    display: none;
+  }
+  .sidebar .menu-icon-close{
+    display: none;
+  }
+
 }

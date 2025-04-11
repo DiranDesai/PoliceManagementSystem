@@ -71,35 +71,25 @@
                   <input type="text" id="searchCriminal" placeholder="Search by name, ID or crime...">
                 </div>
               
-                <table class="criminals-table">
-                  <thead>
-                    <tr>
-                      <th>ID</th>
-                      <th>Photo</th>
-                      <th>Full Name</th>
-                      <th>Crime</th>
-                      <th>Status</th>
-                      <th>Date Arrested</th>
-                      <th>Actions</th>
-                    </tr>
-                  </thead>
-                  <tbody id="criminalsData">
-                    
-                    <tr>
-                      <td>CR001</td>
-                      <td><img src="images/criminal1.jpg" alt=""></td>
-                      <td>James Brown</td>
-                      <td>Theft</td>
-                      <td><span class="status jailed">Jailed</span></td>
-                      <td>2025-03-21</td>
-                      <td>
-                        <button>View</button>
-                      </td>
-                    </tr>
-                    <tr>
+                <div class="table-wrapper">
+                  <table class="criminals-table responsive-table">
+                    <thead>
+                      <tr>
+                        <th>ID</th>
+                        <th>Photo</th>
+                        <th>Full Name</th>
+                        <th>Crime</th>
+                        <th>Status</th>
+                        <th>Date Arrested</th>
+                        <th>Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody id="criminalsData">
+                      
+                      <tr>
                         <td>CR001</td>
-                        <td><img src="images/criminal2.jpg" alt=""></td>
-                        <td>Lonald Walland</td>
+                        <td><img src="images/criminal1.jpg" alt=""></td>
+                        <td>James Brown</td>
                         <td>Theft</td>
                         <td><span class="status jailed">Jailed</span></td>
                         <td>2025-03-21</td>
@@ -108,40 +98,52 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>CR001</td>
-                        <td><img src="images/criminal3.jpg" alt=""></td>
-                        <td>Geofrey Tamiga</td>
-                        <td>Theft</td>
-                        <td><span class="status jailed">Custody</span></td>
-                        <td>2025-03-21</td>
-                        <td>
-                          <button>View</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>CR004</td>
-                        <td><img src="images/criminal4.jpg" alt=""></td>
-                        <td>Mostapher Kenny</td>
-                        <td>Rape</td>
-                        <td><span class="status jailed">Jailed</span></td>
-                        <td>2025-02-25</td>
-                        <td>
-                          <button>View</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>CR005</td>
-                        <td><img src="images/criminal5.jpg" alt=""></td>
-                        <td>Chinsaka Bornwell</td>
-                        <td>Robbery</td>
-                        <td><span class="status jailed">Custody</span></td>
-                        <td>2024-03-11</td>
-                        <td>
-                          <button>View</button>
-                        </td>
-                      </tr>
-                  </tbody>
-                </table>
+                          <td>CR001</td>
+                          <td><img src="images/criminal2.jpg" alt=""></td>
+                          <td>Lonald Walland</td>
+                          <td>Theft</td>
+                          <td><span class="status jailed">Jailed</span></td>
+                          <td>2025-03-21</td>
+                          <td>
+                            <button>View</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>CR001</td>
+                          <td><img src="images/criminal3.jpg" alt=""></td>
+                          <td>Geofrey Tamiga</td>
+                          <td>Theft</td>
+                          <td><span class="status jailed">Custody</span></td>
+                          <td>2025-03-21</td>
+                          <td>
+                            <button>View</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>CR004</td>
+                          <td><img src="images/criminal4.jpg" alt=""></td>
+                          <td>Mostapher Kenny</td>
+                          <td>Rape</td>
+                          <td><span class="status jailed">Jailed</span></td>
+                          <td>2025-02-25</td>
+                          <td>
+                            <button>View</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>CR005</td>
+                          <td><img src="images/criminal5.jpg" alt=""></td>
+                          <td>Chinsaka Bornwell</td>
+                          <td>Robbery</td>
+                          <td><span class="status jailed">Custody</span></td>
+                          <td>2024-03-11</td>
+                          <td>
+                            <button>View</button>
+                          </td>
+                        </tr>
+                    </tbody>
+                  </table>
+                </div>
               
                 <!-- <div class="pagination">
                   <button class="prev">Prev</button>

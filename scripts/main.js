@@ -2,6 +2,9 @@ const logo = document.querySelector(".logo")
 const officerProfile = document.querySelector(".officer-profile")
 const signOutBtn = document.querySelector(".signout-btn")
 const loaderWrapper = document.querySelector(".loader-wrapper")
+const menuIcon = document.querySelector(".menu-icon")
+const menuIconClose = document.querySelector(".menu-icon-close")
+const sidebar = document.querySelector(".sidebar")
 
 
 
@@ -26,29 +29,36 @@ function showLoader(redirect) {
 
 }
 
+menuIcon.addEventListener("click", () => {
+    sidebar.classList.toggle("move-left")
+})
+menuIconClose.addEventListener("click", () => {
+    sidebar.classList.toggle("move-left")
+})
 
-  // Chart 1: Cases by Status
-  const ctxStatus = document.getElementById('statusChart').getContext('2d');
-  const statusChart = new Chart(ctxStatus, {
-    type: 'doughnut',
-    data: {
-      labels: ['Open', 'Closed', 'Pending', 'Under Investigation'],
-      datasets: [{
-        label: 'Cases by Status',
-        data: [12, 8, 5, 3],
-        backgroundColor: ['#3498db', '#2ecc71', '#f1c40f', '#e67e22'],
-        borderWidth: 1
-      }]
-    },
-    options: {
-      responsive: true,
-      plugins: {
-        legend: {
-          position: 'bottom'
-        }
-      }
-    }
-  });
+
+//   // Chart 1: Cases by Status
+//   const ctxStatus = document.getElementById('statusChart').getContext('2d');
+//   const statusChart = new Chart(ctxStatus, {
+//     type: 'doughnut',
+//     data: {
+//       labels: ['Open', 'Closed', 'Pending', 'Under Investigation'],
+//       datasets: [{
+//         label: 'Cases by Status',
+//         data: [12, 8, 5, 3],
+//         backgroundColor: ['#3498db', '#2ecc71', '#f1c40f', '#e67e22'],
+//         borderWidth: 1
+//       }]
+//     },
+//     options: {
+//       responsive: true,
+//       plugins: {
+//         legend: {
+//           position: 'bottom'
+//         }
+//       }
+//     }
+//   });
 
 //   // Chart 2: Top Crimes This Month
 //   const ctxCrime = document.getElementById('crimeChart').getContext('2d');

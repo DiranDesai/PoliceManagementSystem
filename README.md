@@ -2,20 +2,6 @@
 
 A web-based Police Management System designed to help manage police operations, including case files, criminal records, and officer profiles.
 
----
-
-## 📋 Table of Contents
-
-- [Features](#-features)
-- [Screenshots](#-screenshots)
-- [Installation](#-installation)
-- [Usage](#-usage)
-- [Project Structure](#-project-structure)
-- [Technologies Used](#-technologies-used)
-- [Contributing](#-contributing)
-- [License](#-license)
-
----
 
 ## ✅ Features
 
@@ -37,11 +23,7 @@ A web-based Police Management System designed to help manage police operations, 
 ![Screenshot (205)](https://github.com/user-attachments/assets/34f69945-7192-4adf-a220-c99bff7f13a3)
 ![Screenshot (206)](https://github.com/user-attachments/assets/11be3be8-520a-482d-8bf8-6ad0f8212cf6)
 
-_Add screenshots of your app here (e.g., dashboard, login page, records table)._
 
----
-
-## ⚙️ Installation
 
 1. Clone the repository:
    ```bash
